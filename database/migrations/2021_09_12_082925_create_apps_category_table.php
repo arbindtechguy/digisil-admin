@@ -15,7 +15,7 @@ class CreateAppsCategoryTable extends Migration
         Schema::create('apps_category', function (Blueprint $table) {
             $table->id();
             $table->integer('rank')->nullable();
-            $table->text('category')->nullable()->unique();
+            $table->text('category')->nullable();
             $table->timestamps();
         });
     }
