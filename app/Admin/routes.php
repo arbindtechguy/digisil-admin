@@ -20,5 +20,6 @@ Route::group([
 
     $router->get('/delete_app/{id}', 'AppRanking@deleteApp')->name('deleteApp');
     $router->get('/delete_category/{id}', 'CategoryRanking@deleteCategory')->name('deleteCategory');
+    $router->get('/delete_group/{id}', 'GroupRanking@deleteGroup')->name('deleteGroup');
 
 });
