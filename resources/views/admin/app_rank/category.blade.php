@@ -41,8 +41,8 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">カテゴリ名</th>
-                <th scope="col">グループ名</th>
-                <th scope="col">アプリ</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody id="category-body">
