@@ -37,7 +37,7 @@ class AppsController extends BaseController {
 
     public function getCategories() {
         $getCategories = DB::table('apps_category')->select('category', 'rank', 'id')->get();
-        return json_encode($getCategories);
+        return json_encode($getCategories, JSON_FORCE_OBJECT);
     }
     public function getGroups() {
         if ($this->category_id) {
@@ -46,7 +46,7 @@ class AppsController extends BaseController {
         $getCategories = DB::table('apps_group')->select('group', 'rank', 'id', 'category_id')
         ->where($this->where)
         ->get();
-        return json_encode($getCategories);
+        return json_encode($getCategories, JSON_FORCE_OBJECT);
     }
     
     public function getApps() {
@@ -56,7 +56,7 @@ class AppsController extends BaseController {
         $getCategories = DB::table('apps')->select('app', 'rank', 'id', 'group_id')
         ->where($this->where)
         ->get();
-        return json_encode($getCategories);
+        return json_encode($getCategories, JSON_FORCE_OBJECT);
     }
     
 }
