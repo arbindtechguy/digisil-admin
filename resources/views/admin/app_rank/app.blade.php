@@ -32,7 +32,7 @@
 </div>
 @endif
 <div class="container">
-    <button type="button" id="add-app" class="btn btn-success m-3"><i class="fa fa-plus"></i> グループを登録する</button>
+    <button type="button" id="add-app" class="btn btn-success m-3"><i class="fa fa-plus"></i> アプリを登録する</button>
 </div>
 <form method="post" action="{{route('admin.addApp', [
     'groupId' => $groupId
